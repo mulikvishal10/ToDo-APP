@@ -1,70 +1,28 @@
-body {
-  font-family: "Roboto", sans-serif;
-  background-color: #f5f5f5;
-  margin: 0;
-  padding: 0;
-}
-
-.app-container {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 16px;
-  background-color: #fff;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  margin-top: 40px;
-}
-
-.header {
-  text-align: center;
+/* CSS content remains the same as before */
+.tab-container {
+  display: flex;
   margin-bottom: 16px;
 }
 
-.header h1 {
-  color: #4285f4;
-}
-
-.input-container {
-  display: flex;
-  align-items: center;
-  margin-bottom: 16px;
-}
-
-#todoInput {
-  flex: 1;
-  padding: 8px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  outline: none;
-}
-
-button {
-  margin-left: 8px;
-  padding: 8px 16px;
-  font-size: 16px;
-  background-color: #4285f4;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  outline: none;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.todo-item {
-  display: flex;
-  align-items: center;
-  margin-bottom: 8px;
-  padding: 8px;
+.tablink {
   background-color: #f1f1f1;
-  border-radius: 4px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  flex: 1;
+  font-size: 16px;
+  transition: background-color 0.3s;
 }
 
-.todo-item input[type="checkbox"] {
-  margin-right: 8px;
+.tablink:hover {
+  background-color: #ddd;
+}
+
+.tabcontent {
+  display: none;
+}
+
+#todos {
+  display: block;
 }

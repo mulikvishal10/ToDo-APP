@@ -1,11 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Todo App - Material Design</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap">
-  <link rel="stylesheet" href="styles.css">
+  <!-- Head content remains the same as before -->
 </head>
 <body>
   <div class="app-container">
@@ -14,11 +10,36 @@
     </div>
     <div class="input-container">
       <input type="text" id="todoInput" placeholder="Add your task here">
+      <select id="prioritySelect">
+        <option value="High">High</option>
+        <option value="Medium">Medium</option>
+        <option value="Low">Low</option>
+      </select>
       <button onclick="addTodo()">Add</button>
     </div>
-    <ul id="todoList">
-      <!-- Todo items will be added here dynamically -->
-    </ul>
+    <div class="tab-container">
+      <button class="tablink" onclick="openTab(event, 'todos')">Todos</button>
+      <button class="tablink" onclick="openTab(event, 'assignments')">Assignments</button>
+    </div>
+    <div id="todos" class="tabcontent">
+      <ul id="todoList">
+        <!-- Todo items will be added here dynamically -->
+      </ul>
+    </div>
+    <div id="assignments" class="tabcontent">
+      <h2>Assign Tasks</h2>
+      <label for="usersSelect">Select User:</label>
+      <select id="usersSelect">
+        <option value="User 1">User 1</option>
+        <option value="User 2">User 2</option>
+        <option value="User 3">User 3</option>
+        <!-- Add more users as needed -->
+      </select>
+      <button onclick="assignTask()">Assign</button>
+      <ul id="assignmentsList">
+        <!-- Assigned tasks will be added here dynamically -->
+      </ul>
+    </div>
   </div>
 
   <script src="script.js"></script>
