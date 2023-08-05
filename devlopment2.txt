@@ -1,1 +1,3 @@
 this is another devlopment branch
+Resolving conflict
+How conflicts are presented
