@@ -1,1 +1,2 @@
 this is main brach changes
+How conflicts are presented
